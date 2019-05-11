@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1526628890 source:c:\users\admin\desktop\mes programmes c(2e année)\second semestre\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<unistd.h>
+
+1526628890 source:c:\users\admin\desktop\mes programmes c 2e annee\second semestre\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<unistd.h>
+
+1526650241 source:c:\users\admin\desktop\programmes\second semestre\test\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	<unistd.h>
+	<unistd.h>
+
