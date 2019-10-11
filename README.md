@@ -18,10 +18,10 @@ Ans: To attack, you simply need to enter the coordinates of the position you wan
 Ans: To win, you just need to sink all your opponent's boats.
 NB: It's a one after another game! that's is, the two players can't attack simultaneously!
 
-3)In which language is the game designed?
+3) In which language is the game designed?
 Ans: In C
 
-4)Are there different levels?
+4) Are there different levels?
 Ans: Yes! There are 3 levels: Beginner, Intermediate and Expert. These levels differ in the size of the sea, and not the number of boats used! that is, in the level expert, the sea is largest, thereby making it more diffifcult to sink a boat.
 
 5) How are the boats differentiated in the sea?
