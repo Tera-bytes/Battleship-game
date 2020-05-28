@@ -4,30 +4,20 @@
 #include<time.h>
 #include<unistd.h>
 
-/*comment debugger son programme?
-1) il faut dabord se rassurer que le chemin qui mène à l'emplacement de ton project ne contient pas d'espace
-2)NB: on ne debugge que des projeccts (et non des fichiers)
-3)place ton curseur avant la fonction que tu veux debugger (si c'est une fonction que tu veux debugger)
-4)Clique sur "Run to cursor".l'ordi va run automatiquement le programme
-5)puis tu execute le programme comme dab. Arrivé au niveau où tu as placé ton curseur, le programme va cesser de s'executer.
-6)Tu ira maintenant cliquer sur "step into" (pour entrer dans ta fonction)
-7)tu clique maintenant sur "next line" pour parcourir ta fonction
-8) si le way de "watches" là n'apparait pas, tu le put(et tu verra l'évolutions des valeurs de tes differentes variable)
-*/
 unsigned int;
 /* la bibliotheque
 
          #include<unistd.h>
 
- permet de temporiser; la fonction à utiliser est:
-           unsigned int;  (à mettre hors du main)
+ permet de temporiser; la fonction Ã  utiliser est:
+           unsigned int;  (Ã  mettre hors du main)
            Sleep(chiffre);
 */
 //le debuggers ne fonctionne que dans les projets( ie les main)
-// NB:puts et gets ne sont utilisé que pour des phrases ne contenant pas d'espace
+// NB:puts et gets ne sont utilisÃ© que pour des phrases ne contenant pas d'espace
 /*
-Comment utiliser le debugeer?? avant de l'utiiser, il faut se rassurer que tout le chemin d'access qui mène au programmes ne contient pas de caractères spéciaux
-quelques caractères spéciaux sont: é,à,è l'espace, ?, §, et tant d'autres;
+Comment utiliser le debugeer?? avant de l'utiiser, il faut se rassurer que tout le chemin d'access qui mÃ¨ne au programmes ne contient pas de caractÃ¨res spÃ©ciaux
+quelques caractÃ¨res spÃ©ciaux sont: Ã©,Ã ,Ã¨ l'espace, ?, Â§, et tant d'autres;
 */
 
 float meilleur_pourcentage=0;
@@ -259,7 +249,7 @@ void saisir1(char T[30][30],int taille)
 
 
 
-void vedette(char T[30][30],int taille,int a) // avant je faisais l'erreur fatale de mettre *T mais c'était faux! on ne mets pas * pour les tableaux
+void vedette(char T[30][30],int taille,int a) // avant je faisais l'erreur fatale de mettre *T mais c'Ã©tait faux! on ne mets pas * pour les tableaux
 { int x,y,i,j;
     color(3,0); printf("VEDETTES (vous avez droit a %d)\n",a); color(7,0);
     for(i=0;i<a;i++)
@@ -491,7 +481,7 @@ void attaque_le_joueur2_niveau_normal(char T[30][30],char N[30][30],char M1[30][
     }
 
     if(N[x][y]=='V'){ N[x][y]='~';
-        color(3,0); gotoxy(15,30); printf("COULE\n"); M1[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractère mais '0' l'est
+        color(3,0); gotoxy(15,30); printf("COULE\n"); M1[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractÃ¨re mais '0' l'est
     }
 
    if(N[x][y]=='T')
@@ -585,7 +575,7 @@ void attaque_le_joueur2_niveau_difficile(char T[30][30],char N[30][30],char M1[3
     }
 
     if(N[x][y]=='V'){ N[x][y]='~';
-        color(3,0); gotoxy(15,30); printf("COULE\n"); M1[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractère mais '0' l'est
+        color(3,0); gotoxy(15,30); printf("COULE\n"); M1[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractÃ¨re mais '0' l'est
     }
 
    if(N[x][y]=='T')
@@ -679,7 +669,7 @@ void attaque_le_joueur2(char T[30][30],char N[30][30],char M1[30][30],char L2[30
     }
 
     if(N[x][y]=='V'){ N[x][y]='~'; cout_utile1++;
-        color(3,0); gotoxy(15,30); printf("COULE\n"); M1[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractère mais '0' l'est
+        color(3,0); gotoxy(15,30); printf("COULE\n"); M1[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractÃ¨re mais '0' l'est
     }
 
    if(N[x][y]=='T')
@@ -772,7 +762,7 @@ void attaquer_la_machine(char T[30][30],char N[30][30],char M1[30][30],char L2[3
     }
 
     if(N[x][y]=='V'){ N[x][y]='~';
-        color(3,0); gotoxy(15,30); printf("COULE\n"); M1[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractère mais '0' l'est
+        color(3,0); gotoxy(15,30); printf("COULE\n"); M1[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractÃ¨re mais '0' l'est
     }
 
    if(N[x][y]=='T')
@@ -857,8 +847,8 @@ void attaquer_la_machine(char T[30][30],char N[30][30],char M1[30][30],char L2[3
 }
 void attaque_le_joueur1(char T[30][30],char N[30][30],char M1[30][30],char L1[30][30],int taille,char M2[30][30])
 {  // T c'est celui qui attaque; N c'est celui qui se fait attaquer
-   //M1 c'est la vue du premier joueur(situé à la gauche et en dessous(sur l'écran)
-      //M2 c'est la vue du premier joueur(situé à la droite et en dessous(sur l'écran)
+   //M1 c'est la vue du premier joueur(situÃ© Ã  la gauche et en dessous(sur l'Ã©cran)
+      //M2 c'est la vue du premier joueur(situÃ© Ã  la droite et en dessous(sur l'Ã©cran)
     int x,y,i,j,p=0;  gotoxy(87,25);
     puts("ATTAQUER"); gotoxy(98,25); scanf("%d",&x); gotoxy(98,26); scanf("%d",&y);
     if(T[x][y]=='~'){
@@ -866,7 +856,7 @@ void attaque_le_joueur1(char T[30][30],char N[30][30],char M1[30][30],char L1[30
     }
 
     if(T[x][y]=='V'){ T[x][y]='~';
-        color(3,0); gotoxy(85,30); printf("COULE\n"); M2[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractère mais '0' l'est
+        color(3,0); gotoxy(85,30); printf("COULE\n"); M2[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractÃ¨re mais '0' l'est
     }
 
    if(T[x][y]=='T')
@@ -978,8 +968,8 @@ float meilleur_pourcentage_niveau_facile(int cout_utile1,int cout_inutile1,int c
 
 void attaquer_le_joueur(char T[30][30],char N[30][30],char M1[30][30],char L1[30][30],int taille,char M2[30][30],char fun[30][30])
 {  // T c'est celui qui attaque; N c'est celui qui se fait attaquer
-   //M1 c'est la vue du premier joueur(situé à la gauche et en dessous(sur l'écran)
-      //M2 c'est la vue du premier joueur(situé à la droite et en dessous(sur l'écran)
+   //M1 c'est la vue du premier joueur(situÃ© Ã  la gauche et en dessous(sur l'Ã©cran)
+      //M2 c'est la vue du premier joueur(situÃ© Ã  la droite et en dessous(sur l'Ã©cran)
     int x,y,i,j,p=0,m,n,min=0,max=5;
     srand(time(NULL));
     m=(rand()%(max-min+1)) + min;
@@ -992,7 +982,7 @@ void attaquer_le_joueur(char T[30][30],char N[30][30],char M1[30][30],char L1[30
     }
 
     if(T[m][n]=='V'){ T[m][n]='~';
-        color(3,0); gotoxy(85,30); printf("COULE\n"); M2[m][n]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractère mais '0' l'est
+        color(3,0); gotoxy(85,30); printf("COULE\n"); M2[m][n]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractÃ¨re mais '0' l'est
     }
 
    if(T[m][n]=='T')
@@ -1079,8 +1069,8 @@ void attaquer_le_joueur(char T[30][30],char N[30][30],char M1[30][30],char L1[30
 
 void attaque_le_joueur1_niveau_normal(char T[30][30],char N[30][30],char M1[30][30],char L1[30][30],int taille,char M2[30][30])
 {  // T c'est celui qui attaque; N c'est celui qui se fait attaquer
-   //M1 c'est la vue du premier joueur(situé à la gauche et en dessous(sur l'écran)
-      //M2 c'est la vue du premier joueur(situé à la droite et en dessous(sur l'écran)
+   //M1 c'est la vue du premier joueur(situÃ© Ã  la gauche et en dessous(sur l'Ã©cran)
+      //M2 c'est la vue du premier joueur(situÃ© Ã  la droite et en dessous(sur l'Ã©cran)
     int x,y,i,j,p=0;  gotoxy(87,25);
     puts("ATTAQUER"); gotoxy(98,25); scanf("%d",&x); gotoxy(98,26); scanf("%d",&y);
     if(T[x][y]=='~'){ cout_inutile2++;
@@ -1089,7 +1079,7 @@ void attaque_le_joueur1_niveau_normal(char T[30][30],char N[30][30],char M1[30][
     }
 
     if(T[x][y]=='V'){ T[x][y]='~'; cout_utile2++;
-        color(3,0); gotoxy(85,30); printf("COULE\n"); M2[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractère mais '0' l'est
+        color(3,0); gotoxy(85,30); printf("COULE\n"); M2[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractÃ¨re mais '0' l'est
     }
 
    if(T[x][y]=='T')
@@ -1175,8 +1165,8 @@ void attaque_le_joueur1_niveau_normal(char T[30][30],char N[30][30],char M1[30][
 
 void attaque_le_joueur1_niveau_difficile(char T[30][30],char N[30][30],char M1[30][30],char L1[30][30],int taille,char M2[30][30])
 {  // T c'est celui qui attaque; N c'est celui qui se fait attaquer
-   //M1 c'est la vue du premier joueur(situé à la gauche et en dessous(sur l'écran)
-      //M2 c'est la vue du premier joueur(situé à la droite et en dessous(sur l'écran)
+   //M1 c'est la vue du premier joueur(situÃ© Ã  la gauche et en dessous(sur l'Ã©cran)
+      //M2 c'est la vue du premier joueur(situÃ© Ã  la droite et en dessous(sur l'Ã©cran)
     int x,y,i,j,p=0;  gotoxy(87,27);
     puts("ATTAQUER"); gotoxy(98,27); scanf("%d",&x); gotoxy(98,28); scanf("%d",&y);
     if(T[x][y]=='~'){ //cout_inutile2++;
@@ -1185,7 +1175,7 @@ void attaque_le_joueur1_niveau_difficile(char T[30][30],char N[30][30],char M1[3
     }
 
     if(T[x][y]=='V'){ T[x][y]='~'; //cout_utile2++;
-        color(3,0); gotoxy(85,30); printf("COULE\n"); M2[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractère mais '0' l'est
+        color(3,0); gotoxy(85,30); printf("COULE\n"); M2[x][y]='*'; //  c'est faut d'ecrire L2[i][j]=0 car 0 n'est pas un caractÃ¨re mais '0' l'est
     }
 
    if(T[x][y]=='T')
@@ -1309,9 +1299,9 @@ void petiteboucle(char T[30][30],char N[30][30],int taille,char M1[30][30],char 
 {// T c'est celui qui attaque; N c'est celui qui se fait attaquer; L2 c'est le tableau imaginaire de celui qui se fait attaquer
 //L1 c'est le tableau imaginaire de celui qui attaque
 //e c'est par rapport au premier joueur
-//c c'est par rapport au deuxième joueur
+//c c'est par rapport au deuxiÃ¨me joueur
     int c=0,d=taille*taille,i,j,e=0,p;
-    while(c!=d && e!=d){ c=0; e=0; // pour empêcher que les valeurs de c et e ne dépasse 36
+    while(c!=d && e!=d){ c=0; e=0; // pour empÃªcher que les valeurs de c et e ne dÃ©passe 36
         for(i=0;i<taille;i++)
            for(j=0;j<taille;j++){
               if(N[i][j]=='~')
@@ -1381,9 +1371,9 @@ void petiteboucle_machine(char T[30][30],char N[30][30],int taille,char M1[30][3
 {// T c'est celui qui attaque; N c'est celui qui se fait attaquer; L2 c'est le tableau imaginaire de celui qui se fait attaquer
 //L1 c'est le tableau imaginaire de celui qui attaque
 //e c'est par rapport au premier joueur
-//c c'est par rapport au deuxième joueur
+//c c'est par rapport au deuxiÃ¨me joueur
     int c=0,d=taille*taille,i,j,e=0,p;
-    while(c!=d && e!=d){ c=0; e=0; // pour empêcher que les valeurs de c et e ne dépasse 36
+    while(c!=d && e!=d){ c=0; e=0; // pour empÃªcher que les valeurs de c et e ne dÃ©passe 36
         for(i=0;i<taille;i++)
            for(j=0;j<taille;j++){
               if(N[i][j]=='~')
@@ -1449,7 +1439,7 @@ void petiteboucle_niveau_normal(char T[30][30],char N[30][30],int taille,char M1
 {// T c'est celui qui attaque; N c'est celui qui se fait attaquer; L2 c'est le tableau imaginaire de celui qui se fait attaquer
 //L1 c'est le tableau imaginaire de celui qui attaque
     int c=0,d=taille*taille,i,j,e=0,p;
-while(c!=d && e!=d){ c=0; e=0; // pour empêcher que les valeurs de c et e ne dépasse 36
+while(c!=d && e!=d){ c=0; e=0; // pour empÃªcher que les valeurs de c et e ne dÃ©passe 36
         for(i=0;i<taille;i++)
            for(j=0;j<taille;j++){
               if(N[i][j]=='~')
@@ -1515,7 +1505,7 @@ void petiteboucle_niveau_difficile(char T[30][30],char N[30][30],int taille,char
 {// T c'est celui qui attaque; N c'est celui qui se fait attaquer; L2 c'est le tableau imaginaire de celui qui se fait attaquer
 //L1 c'est le tableau imaginaire de celui qui attaque
     int c=0,d=taille*taille,i,j,e=0,p;
-while(c!=d && e!=d){ c=0; e=0; // pour empêcher que les valeurs de c et e ne dépasse 36
+while(c!=d && e!=d){ c=0; e=0; // pour empÃªcher que les valeurs de c et e ne dÃ©passe 36
         for(i=0;i<taille;i++)
            for(j=0;j<taille;j++){
               if(N[i][j]=='~')
@@ -1638,7 +1628,7 @@ void affiche2_niveau_difficile(char T[30][30])
 
 
 void affiche3(char T[30][30])
-{ // c'est uniquement pour l'aperçu du premier joueur sur le second (bref M)
+{ // c'est uniquement pour l'aperÃ§u du premier joueur sur le second (bref M)
     int i,j;
     gotoxy(30,35); color(10,0); printf("VUE SUR L'ENNEMI\n\n"); color(7,0);
     printf("\t\t\t0\t1\t2\t3\t4\t5\n\n\n\t\t");
@@ -1651,7 +1641,7 @@ void affiche3(char T[30][30])
 
 
 void affiche3_niveau_normal(char T[30][30])
-{ // c'est uniquement pour l'aperçu du premier joueur sur le second (bref M)
+{ // c'est uniquement pour l'aperÃ§u du premier joueur sur le second (bref M)
     int i,j;
     gotoxy(30,35); color(10,0); printf("VUE SUR L'ENNEMI\n\n"); color(7,0);
     printf("\t\t0\t1\t2\t3\t4\t5\t6\n\n\n\t");
@@ -1663,7 +1653,7 @@ void affiche3_niveau_normal(char T[30][30])
 }
 
 void affiche3_niveau_difficile(char T[30][30])
-{ // c'est uniquement pour l'aperçu du premier joueur sur le second (bref M)
+{ // c'est uniquement pour l'aperÃ§u du premier joueur sur le second (bref M)
     int i,j;
     gotoxy(30,32); color(10,0); printf("VUE SUR L'ENNEMI\n\n"); color(7,0);
     printf("\t\t0\t1\t2\t3\t4\t5\t6\t7\n\n\n\t");
@@ -1675,7 +1665,7 @@ void affiche3_niveau_difficile(char T[30][30])
 }
 
 void affiche4(char T[30][30])
-{ // c'est uniquement pour l'aperçu du deuxième joueur sur le premier (bref M)
+{ // c'est uniquement pour l'aperÃ§u du deuxiÃ¨me joueur sur le premier (bref M)
      int i,j;
 gotoxy(106,35); color(11,0); printf("\tVUE SUR L'ENNEMI\n\n"); color(7,0);
 gotoxy(72,37); printf("\t\t\t\t0\t1\t2\t3\t4\t5\n\n\n\t"); gotoxy(72,40);
@@ -1687,7 +1677,7 @@ gotoxy(72,37); printf("\t\t\t\t0\t1\t2\t3\t4\t5\n\n\n\t"); gotoxy(72,40);
 }
 
 void affiche4_niveau_normal(char T[30][30])
-{ // c'est uniquement pour l'aperçu du deuxième joueur sur le premier (bref M)
+{ // c'est uniquement pour l'aperÃ§u du deuxiÃ¨me joueur sur le premier (bref M)
      int i,j;
 gotoxy(106,35); color(11,0); printf("\tVUE SUR L'ENNEMI\n\n"); color(7,0);
 gotoxy(72,37); printf("\t\t\t0\t1\t2\t3\t4\t5\t6\n\n\n"); gotoxy(72,40);
@@ -1699,7 +1689,7 @@ gotoxy(72,37); printf("\t\t\t0\t1\t2\t3\t4\t5\t6\n\n\n"); gotoxy(72,40);
 }
 
 void affiche4_niveau_difficile(char T[30][30])
-{ // c'est uniquement pour l'aperçu du deuxième joueur sur le premier (bref M)
+{ // c'est uniquement pour l'aperÃ§u du deuxiÃ¨me joueur sur le premier (bref M)
      int i,j;
 gotoxy(106,33); color(11,0); printf("\tVUE SUR L'ENNEMI\n\n"); color(7,0);
 gotoxy(72,35); printf("\t\t\t0\t1\t2\t3\t4\t5\t6\t7\n\n\n\n"); gotoxy(72,38);
@@ -1795,7 +1785,7 @@ void aide()
 
 void main()
 {int m,n,min=0,max=5,choix1,choix2,choix3,choix4,choix5,choix6,choix7,fun[30][30],tab1[30][30],i,j,tab2[30][30],M1[30][30],M2[30][30],L1[30][30],L2[30][30];
-//je vais crée 2 tableaux imaginaires(notés L1 et L2; un pour chaque joueur
+//je vais crÃ©e 2 tableaux imaginaires(notÃ©s L1 et L2; un pour chaque joueur
 gotoxy(75,23); printf("BATAILLE NAVALE");
 Sleep(200);
 color(0,7);cadre(73,90,21,25);
@@ -1959,7 +1949,7 @@ switch(choix1)
            case 1:color (7,0); gotoxy(60,28); puts("VEUILLEZ REMPLIR LA GRILLE SUIVANTE\n\n\n\n"); color(0,0); system("pause"); system("cls"); color(7,0);
                   saisir1(tab1,6);
                   saisir1(tab2,6);
-                  saisir_machine(tab2,6); //c'est un peu comme le tableau par defaut assigné à la machine
+                  saisir_machine(tab2,6); //c'est un peu comme le tableau par defaut assignÃ© Ã  la machine
                   affiche1(tab1,' ');
                   par_defaut1(tab1); //vedette(tab1,6,1); torpie(tab1,6,1); sous_marin(tab1,6,1); porte_avion(tab1,6,1);
                   for_view_only(fun,6);
